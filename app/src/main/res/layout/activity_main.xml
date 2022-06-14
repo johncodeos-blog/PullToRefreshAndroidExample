@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/itemsswipetorefresh"
+            android:id="@+id/items_swipe_to_refresh"
             android:layout_width="wrap_content"
             android:layout_height="0px"
             android:layout_weight="1">
 
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/itemsrv"
+                android:id="@+id/items_rv"
                 android:layout_width="match_parent"
-                android:background="@color/colorPrimaryDark"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
